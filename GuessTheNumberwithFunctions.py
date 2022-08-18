@@ -1,5 +1,5 @@
 import random
-
+#You guess here
 def guess(x):
     random_number = random.randint(1,x)
     guess = 0
@@ -11,7 +11,7 @@ def guess(x):
             print("Tahminini azalt")
     print(f" Tebrikler, sayıyı buldun. Sayımız: {random_number}")
 guess(100)
-
+#Computer tries to guess your number
 def computer_guess(x):
     low = 1
     high = x
