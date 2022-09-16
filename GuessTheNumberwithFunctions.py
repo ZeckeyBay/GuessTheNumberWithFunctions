@@ -16,15 +16,15 @@ def computer_guess(x):
     low = 1
     high = x
     feedback = ""
-    while feedback != "c":
+    while feedback != "D":
         if low != high:
             guess = random.randint(low,high)
         else:
             guess = low
-        feedback = input(f"Tahmininim {guess} çok mu yüksek (H) yoksa çok mu az (L), yoksa doğrumu(C)?").lower()
-        if feedback == "h":
+        feedback = input(f"Tahmininim {guess} çok mu yüksek (Y) yoksa çok mu az (A), yoksa doğrumu(D)?").lower()
+        if feedback == "Y":
              high = guess -1
-        elif feedback == "l":
+        elif feedback == "A":
             low = guess +1
     print(f"Tahmin ettiğin sayıyı,{guess} buldun!")
 computer_guess(100)
