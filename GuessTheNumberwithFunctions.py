@@ -26,5 +26,5 @@ def computer_guess(x):
              high = guess -1
         elif feedback == "A":
             low = guess +1
-    print(f"Tahmin ettiğin sayıyı,{guess} buldun!")
+    print(f"Tahmin ettiğim sayıyı,{guess} buldun!")
 computer_guess(100)
